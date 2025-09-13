@@ -1,0 +1,24 @@
+{
+  "name": "twitter-x-clone",
+  "version": "1.0.0",
+  "description": "x clone using tailwind",
+  "homepage": "https://github.com/Asmar255/TWITTER-X-CLONE#readme",
+  "bugs": {
+    "url": "https://github.com/Asmar255/TWITTER-X-CLONE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asmar255/TWITTER-X-CLONE.git"
+  },
+  "license": "ISC",
+  "author": "ASMAR NAEEM",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
