@@ -12,9 +12,9 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="flex container w-10/11  mx-auto py-1">
+    <div class="flex container w-10/11  mx-auto py-1 h-screen">
 
-        <div class="first w-[29%] mt-4">
+        <div class="first w-10 md:w-[29%] mt-4 fixed top-0">
             <div class="logo py-1">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
                     class="invert w-8 mx-25 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
@@ -29,47 +29,48 @@
                 <ul class="flex flex-col text-2xl space-y-2 w-2/3">
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">home</span>Home
+                        <span class="text-3xl material-symbols-outlined">home</span> <span class="hidden md:block">Home</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">search</span>Explore
+                        <span class="text-3xl material-symbols-outlined">search</span> <span class="hidden md:block">Explore</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">Notifications</span>Notifications
+                        <span class="text-3xl material-symbols-outlined">Notifications</span> <span class="hidden md:block">Notifications</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">Text_Fields_Alt</span>Grok
+                        <span class="text-3xl material-symbols-outlined">Text_Fields_Alt</span> <span class="!hidden md:block">Grok</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">list_alt</span>List
+                        <span class="text-3xl material-symbols-outlined">list_alt</span> <span class="hidden md:block">List</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">bookmarks</span>Bookmarks
+                        <span class="text-3xl material-symbols-outlined">bookmarks</span> <span class="hidden md:block">Bookmarks</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">communities</span>Communities
+                        <span class="text-3xl material-symbols-outlined">communities</span> <span class="hidden md:block">Communities</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">crown</span>Premium
+                        <span class="text-3xl material-symbols-outlined">crown</span> <span class="hidden md:block">Premium</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">Account_Circle</span>Profile
+                        <span class="text-3xl material-symbols-outlined">Account_Circle</span> <span class="hidden md:block">Profile</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-1 hover:cursor-pointer hover:bg-gray-900 w-fit hover:rounded-xl hover:py-0.5 hover:px-0.5">
-                        <span class="text-3xl material-symbols-outlined">add</span>More
+                        <span class="text-3xl material-symbols-outlined">add</span> <span class="hidden md:block">More</span>
                     </li>
                     <li>
                         <div class="postbutton">
-                            <span class="flex justify-center items-center bg-blue-700 px-1 py-2 rounded-3xl w-3/4 cursor-pointer mt-1">Post</span>
+                            <span
+                                class="flex justify-center items-center bg-blue-700 px-1 py-2 rounded-3xl w-3/4 cursor-pointer mt-1">Post</span>
                         </div>
                     </li>
                 </ul>
@@ -78,7 +79,7 @@
         </div>
 
 
-        <div class="second w-[57%] border-[1px] border-x-white border-y-black relative">
+        <div class="second w-[57%] border-[1px] border-x-white border-y-black relative md:ml-80 ">
             <div class="top flex">
                 <div class="absolute bg-blue-600 h-1 w-16 left-25 top-9 rounded-md"></div>
                 <div
@@ -114,14 +115,72 @@
                 </div>
             </div>
             <hr>
+            <div class="posts mt-2">
+                <div class="post flex">
+                    <div class="img">
+                        <img src="img/a_circle.png" alt="profile photo" class="w-45">
+                    </div>
+                    <div class="content m-1  cursor-pointer">
+                        <span class="underline">Non Asethic things</span><span
+                            class="material-symbols-outlined text-blue-600">verified</span><span
+                            class="text-gray-600">@picturesfolder . 6h</span>
+                        <div>Legends</div>
+                        <div class="postimg">
+                            <img src="img/post img.jpg" alt="post image" class="w-7/8 h-7/8 rounded-xl">
+                        </div>
 
+                        <div class="iconbar w-7/8 mt-1.5 text-gray-600">
+                            <div class="icons flex justify-between">
+                                <span class="material-symbols-outlined">add_comment</span>
+                                <span class="material-symbols-outlined">repeat</span>
+                                <span class="material-symbols-outlined">favorite</span>
+                                <span class="material-symbols-outlined">bar_chart</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="posts mt-2">
+                <div class="post flex">
+                    <div class="img">
+                        <img src="img/a_circle.png" alt="profile photo" class="w-45">
+                    </div>
+                    <div class="content m-1  cursor-pointer">
+                        <span class="underline">Non Asethic things</span><span
+                            class="material-symbols-outlined text-blue-600">verified</span><span
+                            class="text-gray-600">@picturesfolder . 6h</span>
+                        <div>Legends</div>
+                        <div class="postimg">
+                            <img src="img/post img.jpg" alt="post image" class="w-7/8 h-7/8 rounded-xl">
+                        </div>
+
+                        <div class="iconbar w-7/8 mt-1.5 text-gray-600">
+                            <div class="icons flex justify-between">
+                                <span class="material-symbols-outlined">add_comment</span>
+                                <span class="material-symbols-outlined">repeat</span>
+                                <span class="material-symbols-outlined">favorite</span>
+                                <span class="material-symbols-outlined">bar_chart</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <hr>
         </div>
 
 
-        <div class="third w-1/3">
+        <div class="third w-1/3 ">
             <div class="search">
                 <input type="text" placeholder="search" class="w-5/6 rounded-full bg-gray-900 text-white px-1 py-2 m-1">
             </div>
+
             <div class="whats  bg-gray-900 m-1 px-2 my-2 rounded-lg">
                 <h1 class="font-bold py-1 text-2xl">Whats Happening</h1>
                 <div class="items hover:bg-gray-800 cursor-pointer mt-2">
@@ -178,7 +237,8 @@
                 <div class="text-blue-800 underline pt-2 cursor-pointer hover:bg-gray-800">Show More</div>
 
             </div>
-
+            
+          
 
         </div>
 
